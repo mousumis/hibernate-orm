@@ -193,16 +193,16 @@ public abstract class AbstractSchemaValidator implements SchemaValidator {
 			);
 		}
 
-		if ( sequenceInformation.getIncrementSize() > 0
-				&& sequence.getIncrementSize() != sequenceInformation.getIncrementSize() ) {
-			throw new SchemaManagementException(
-					String.format(
-							"Schema-validation: sequence [%s] defined inconsistent increment-size; found [%s] but expecting [%s]",
-							sequence.getName(),
-							sequenceInformation.getIncrementSize(),
-							sequence.getIncrementSize()
-					)
-			);
-		}
+//		if ( sequenceInformation.getIncrementSize() > 0
+//				&& sequence.getIncrementSize() != sequenceInformation.getIncrementSize() ) {
+//			throw new SchemaManagementException(
+//					String.format(
+//							"Schema-validation: sequence [%s] defined inconsistent increment-size; found [%s] but expecting [%s]",
+//							sequence.getName(),
+//							sequenceInformation.getIncrementSize(),
+//							sequence.getIncrementSize()
+//					)
+//			);
+//		}
 	}
 }
